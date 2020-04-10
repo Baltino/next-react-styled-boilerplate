@@ -23,6 +23,10 @@ const StyledInputContainer = styled(Flex)`
     top: 5px;
     right: 5px;
   }
+  label {
+    font-size: ${({ theme }) => theme.fontSizes[0]+"px"};
+    font-weight: bold;
+  }
 `;
 
 
@@ -33,17 +37,17 @@ const MyInput = ({
   type = "text",
   placeholder = "",
   width,
+  ...rest
 }) => {
   return (
     <StyledInputContainer flexDirection={"column"} width={width} >
       { label && (<Label htmlFor={name}>{label}</Label>) }
       <Input
-        py={3}
-        px={2}
         id={name}
         name={name}
         type={type}
         placeholder={placeholder}
+        {...rest}
       />
       {button && button()}
     </StyledInputContainer>
