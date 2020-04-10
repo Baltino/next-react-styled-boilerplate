@@ -62,6 +62,10 @@ export default {
         backgroundSize: "100%",
         transition: "background 0s",
       }
+    },
+    empty: {
+      color: "primary",
+      bg: "transparent"
     }
   }
 }
