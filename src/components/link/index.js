@@ -1,9 +1,15 @@
 import React from "react";
+import { any, string } from "prop-types";
+
 import NextLink from "next/link";
 import { Link } from "rebass/styled-components";
 
+const propTypes = {
+  children: any,
+  href: string,
+};
 
-export default ({ children, href, ...rest}) => (
+const MyLink = ({ children, href, ...rest}) => (
   <NextLink href={href}>
     <Link
       {...rest}
@@ -19,3 +25,7 @@ export default ({ children, href, ...rest}) => (
     </Link>
   </NextLink>
 );
+
+MyLink.propTypes = propTypes;
+
+export default MyLink;

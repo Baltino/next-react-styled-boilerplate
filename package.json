@@ -8,7 +8,7 @@
     "start": "next start",
     "now-build": "npm run build",
     "test": "xo && stylelint './src/**/*.js'",
-    "lint": "eslint src/**/*.js",
+    "lint": "eslint ./src/*",
     "storybook": "start-storybook --port 9009"
   },
   "main": "src/index.js",
