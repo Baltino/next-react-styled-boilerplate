@@ -12,7 +12,7 @@ const Header = () => {
       height={[6]} 
       alignItems={"center"} 
       justifyContent={"space-between"} 
-      sx={{ px: [2], boxShadow: "bottom" }}
+      sx={{ mx: [-2], px: [2], boxShadow: "bottom" }}
     >
       <Logo height={["50px"]} width={["200px"]} />
       <Flex justifyContent={"flex-end"}>

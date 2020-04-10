@@ -10,7 +10,7 @@
     "test": "xo && stylelint './src/**/*.js'",
     "lint": "eslint ./src/*",
     "storybook": "start-storybook --port 9009",
-    "build-storybook": "build-storybook -c .storybook -o .out"
+    "deploy-storybook": "build-storybook -c .storybook -o .out && now"
   },
   "main": "src/index.js",
   "repository": "https://github.com/xxczaki/styled-react-boilerplate",
@@ -21,6 +21,7 @@
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
     "@pieh/friendly-errors-webpack-plugin": "^1.7.0-chalk-2",
+    "@storybook/addon-viewport": "^5.3.18",
     "@storybook/react": "^5.3.18",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
