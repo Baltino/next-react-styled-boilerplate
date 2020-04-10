@@ -10,7 +10,7 @@
     "test": "xo && stylelint './src/**/*.js'",
     "lint": "eslint ./src/*",
     "storybook": "start-storybook --port 9009",
-    "deploy-storybook": "build-storybook -c .storybook -o .out && now"
+    "deploy-storybook": "build-storybook -c .storybook -o .out && now --prod"
   },
   "main": "src/index.js",
   "repository": "https://github.com/xxczaki/styled-react-boilerplate",
