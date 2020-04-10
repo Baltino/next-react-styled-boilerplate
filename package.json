@@ -1,5 +1,5 @@
 {
-  "name": "styled-react-boilerplate",
+  "name": "nextjs-styled-react-boilerplate",
   "version": "1.0.0",
   "description": "Minimal & Modern boilerplate for building apps with React & styled-components",
   "scripts": {
@@ -8,7 +8,8 @@
     "start": "next start",
     "now-build": "npm run build",
     "test": "xo && stylelint './src/**/*.js'",
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint src/**/*.js",
+    "storybook": "start-storybook"
   },
   "main": "src/index.js",
   "repository": "https://github.com/xxczaki/styled-react-boilerplate",
@@ -19,6 +20,7 @@
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
     "@pieh/friendly-errors-webpack-plugin": "^1.7.0-chalk-2",
+    "@storybook/react": "^5.3.18",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "babel-plugin-styled-components": "^1.10.7",
