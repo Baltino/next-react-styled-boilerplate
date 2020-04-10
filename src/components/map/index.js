@@ -1,5 +1,5 @@
 import React from "react";
-import { string, number, arrayOf, oneOf } from "prop-types";
+import { string, number, arrayOf, oneOfType } from "prop-types";
 import ReactMapboxGl, { Marker } from "react-mapbox-gl";
 
 import Mark from "./marker";
@@ -11,8 +11,8 @@ const Map = ReactMapboxGl({
 
 const propTypes = {
   center: arrayOf(number),
-  height: oneOf([string, number]),
-  width: oneOf([string, number]),
+  height: oneOfType([string, number]),
+  width: oneOfType([string, number]),
   zoom: number
 };
 const MyMap = ({ 

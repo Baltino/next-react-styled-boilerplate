@@ -5,7 +5,9 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "prettier",
+        "prettier/react"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -39,6 +41,7 @@
             "error",
             "double"
         ],
+        "max-len": ["error", { "code": 120, "tabWidth": 2 }],
         "react/display-name": [0, { "ignoreTranspilerName": 1 }]
     }
 }

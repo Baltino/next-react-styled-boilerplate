@@ -26,6 +26,7 @@
     "babel-plugin-styled-components": "^1.10.7",
     "clean-css-loader": "^2.0.0",
     "css-loader": "^3.4.2",
+    "eslint-config-prettier": "^6.10.1",
     "eslint-config-xo-react": "^0.23.0",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.1",

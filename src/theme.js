@@ -20,6 +20,9 @@ export default {
   space: [
     0, 4, 8, 16, 32, 64, 128, 256
   ],
+  sizes: [
+    0, 2, 4, 8, 16, 32, 64, 128, 256, 512
+  ],
   fonts: {
     body: "system-ui, sans-serif",
     heading: "inherit",
@@ -35,6 +38,7 @@ export default {
     heading: 1.25,
   },
   shadows: {
+    bottom: "0px 4px 10px -2px rgba(0,0,0,0.56)",
     small: "0 0 4px rgba(0, 0, 0, .125)",
     large: "0 0 24px rgba(0, 0, 0, .125)"
   },
