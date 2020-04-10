@@ -1,17 +1,18 @@
 import React from "react";
+import { Flex } from "rebass/styled-components";
+
 import Link from "../link";
-import { Box } from "rebass";
 
 const Header = () => {
   return (
-    <Box>
+    <Flex>
       <Link href="/">
         Home
       </Link>
       <Link href="/about">
         About Page maxi
       </Link>
-    </Box>
+    </Flex>
   );
 };
 

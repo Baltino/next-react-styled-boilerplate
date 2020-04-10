@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Heading } from "rebass";
+import { Heading } from "rebass/styled-components";
 import { ThemeProvider } from "styled-components";
 
 import theme from "./../theme";

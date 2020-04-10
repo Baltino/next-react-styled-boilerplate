@@ -1,6 +1,6 @@
 import React from "react";
 import NextLink from "next/link";
-import { Link } from "rebass";
+import { Link } from "rebass/styled-components";
 
 
 export default ({ children, href, ...rest}) => (
@@ -9,11 +9,11 @@ export default ({ children, href, ...rest}) => (
       {...rest}
       href={href}
       sx={{
-        display: 'inline-block',
-        fontWeight: 'bold',
+        display: "inline-block",
+        fontWeight: "bold",
         px: 2,
         py: 1,
-        color: 'inherit',
+        color: "inherit",
       }}>
       {children}
     </Link>

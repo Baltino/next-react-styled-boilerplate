@@ -9,7 +9,7 @@
     "now-build": "npm run build",
     "test": "xo && stylelint './src/**/*.js'",
     "lint": "eslint src/**/*.js",
-    "storybook": "start-storybook"
+    "storybook": "start-storybook --port 9009"
   },
   "main": "src/index.js",
   "repository": "https://github.com/xxczaki/styled-react-boilerplate",
@@ -49,11 +49,13 @@
   },
   "dependencies": {
     "@hot-loader/react-dom": "^16.13.0",
+    "@rebass/forms": "^4.0.6",
     "@rebass/preset": "^4.0.5",
     "core-js": "^3.6.4",
     "emotion-theming": "^10.0.27",
     "modern-normalize": "^0.6.0",
     "next": "^9.3.4",
+    "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-hot-loader": "^4.12.20",

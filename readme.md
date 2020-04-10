@@ -2,10 +2,12 @@
 Boilerplate to start any proyect that needs SEO (that's where Nextjs comes in to SSR)
 
 ## Run
+
 ``` npm run dev ```
 
 ## Storybook
 If you want to take a look at the components while they are being updated, run:
+
 ``` npm run storybook ```
 
 ### License
