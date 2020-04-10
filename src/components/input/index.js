@@ -1,33 +1,52 @@
 import React from "react";
-import { string, number, oneOf } from "prop-types";
+import styled from "styled-components";
+import { string, any } from "prop-types";
 
 import { Flex } from "rebass/styled-components";
 import { Label, Input } from "@rebass/forms/styled-components";
 
 
+
 const propTypes = {
-  width: oneOf([string, number]),
+  button: any,
   label: string,
   name: string,
   placeholder: string,
   type: string,
+  width: any,
 };
+
+const StyledInputContainer = styled(Flex)`
+  position: relative;
+  button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+`;
+
+
 const MyInput = ({
+  button = null,
   label,
   name,
   type = "text",
   placeholder = "",
+  width,
 }) => {
   return (
-    <Flex flexDirection={"column"}>
+    <StyledInputContainer flexDirection={"column"} width={width} >
       { label && (<Label htmlFor={name}>{label}</Label>) }
       <Input
+        py={3}
+        px={2}
         id={name}
         name={name}
         type={type}
         placeholder={placeholder}
       />
-    </Flex>
+      {button && button()}
+    </StyledInputContainer>
   );
 };
 
