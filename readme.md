@@ -1,5 +1,12 @@
-# Nextjs - Reactjs - Rebass styled-components (WIP)
+# Mi Audiencia UI components.
+- Nextjs - Reactjs - Rebass styled-components (WIP)
 Boilerplate to start any proyect that needs SEO (that's where Nextjs comes in to SSR)
+
+## Stack
+- Nextjs
+- Reactjs
+- Rebass with styled-components
+- React-spring
 
 ## Run
 
