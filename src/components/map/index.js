@@ -1,12 +1,12 @@
 import React from "react";
 import { string, number, arrayOf, oneOfType } from "prop-types";
 import ReactMapboxGl, { Marker } from "react-mapbox-gl";
+import { MAPBOX_KEY } from "../../utils/constants";
 
 import Mark from "./marker";
 
 const Map = ReactMapboxGl({
-  accessToken: // TODO: change to .env
-    "pk.eyJ1IjoibWF4aW1pbGlhbm9hcmFnb24iLCJhIjoiY2s4dTUweno4MDdmOTNmbWhwY3cyM3o4OSJ9.6AcgQIkMEvxHorsE8fFF4A"
+  accessToken: MAPBOX_KEY  
 });
 
 const propTypes = {

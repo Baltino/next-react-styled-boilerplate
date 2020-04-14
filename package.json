@@ -54,6 +54,7 @@
     "@hot-loader/react-dom": "^16.13.0",
     "@rebass/forms": "^4.0.6",
     "@rebass/preset": "^4.0.5",
+    "axios": "^0.19.2",
     "core-js": "^3.6.4",
     "emotion-theming": "^10.0.27",
     "mapbox-gl": "^1.9.1",
