@@ -16,6 +16,8 @@ export default {
     primary: "#fd3863",
     primaryButtonRadial: "#616161 radial-gradient(circle, transparent 1%, #616161 1%) center/15000%",
     secondaryButtonRadial: "#fff radial-gradient(circle, transparent 1%, #fff 1%) center/15000%",
+    error: "red",
+    success: "green"
   },
   space: [
     0, 4, 8, 16, 32, 64, 128, 256
@@ -45,6 +47,9 @@ export default {
   variants: {
   },
   text: {
+  },
+  inputs: {
+    
   },
   buttons: {
     primary: {
