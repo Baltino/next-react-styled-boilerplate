@@ -15,7 +15,7 @@ export const Range = () => {
   return (
     <Flex flexDirection={"column"}>
       <Flex>
-        <InputDate placeholder="Inicio" format={FORMAT} selectRange={true} onChange={handleOnChange} />
+        <InputDate placeholder="Inicio  -   Fin" format={FORMAT} selectRange={true} onChange={handleOnChange} />
       </Flex>
     </Flex>
   );

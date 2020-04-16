@@ -9,7 +9,7 @@ const propTypes = {
 const Lens = ({ height = 24, width = 24 }) => (
   <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
     x="0px" y="0px" width={width}
-    height={height} viewBox="0 0 24 24" style={{ "enable-background": "new 0 0 24 24" }} xmlSpace="preserve">
+    height={height} viewBox="0 0 24 24" style={{ "enableBackground": "new 0 0 24 24" }} xmlSpace="preserve">
     <g id="Icons" style={{ opacity: 0.75 }}>
       <path id="search-big" d="M18.853,17.438l-3.604-3.604c-0.075-0.075-0.166-0.127-0.267-0.156C15.621,
       12.781,16,11.686,16,10.5C16,7.463,13.537,5,10.5,5S5,7.463,5,10.5S7.463,16,10.5,16c1.186,0,
