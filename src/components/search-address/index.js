@@ -5,6 +5,7 @@ import axios from "axios";
 import { Flex } from "rebass/styled-components";
 
 import Input from "../input";
+import Lens from "../icons/lens";
 import { MAPBOX_KEY } from "../../utils/constants";
 
 const propTypes = {
@@ -16,7 +17,9 @@ const propTypes = {
 const ResultsContainer = styled(Flex)`
   position: absolute;
   flex-direction: column;
-  top: 50px;
+  top: 60px;
+  background: ${({ theme }) => theme.colors.lightgray};
+  padding: 2px 4px;
 `;
 
 const Result = styled(Flex)`
@@ -52,12 +55,13 @@ const Search = ({ onSelect = () => {}, value = "", width = 300 }) => {
   return (
     <Flex position={"relative"} width={width}>
       <Input 
+        icon={() => <Lens width={30} height={30} />}
         placeholder={"Escribe tu dirección aqui"} 
         onChange={({ target }) => setText(target.value)} 
         variant={inputState}
         value={text} 
       />
-      <ResultsContainer width={300}>
+      <ResultsContainer width={width}>
         {results.map(r => <Result key={r.id} onClick={handleSelectResult(r)}>{r.place_name}</Result>)}
       </ResultsContainer>
     </Flex>

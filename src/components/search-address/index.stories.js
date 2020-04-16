@@ -15,7 +15,7 @@ export const Google = () => {
   return (
     <Flex flexDirection={"column"}>
       <Search onSelect={handleSelect}/>
-      <Text>{selection.id}</Text>
+      <Text mt={3}>{selection.id}</Text>
     </Flex>
   );
 };

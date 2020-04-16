@@ -1,15 +1,16 @@
 import React from "react";
 import styled from "styled-components";
-import { string, any, oneOf } from "prop-types";
+import { string, any, oneOf, func } from "prop-types";
 
 import { Flex } from "rebass/styled-components";
-import { variant } from 'styled-system'
+import { variant } from "styled-system";
 import { Label, Input as RebassInput } from "@rebass/forms/styled-components";
 
+const INPUT_HEIGHT = 40;
 
 
 const propTypes = {
-  button: any,
+  icon: func,
   label: string,
   name: string,
   placeholder: string,
@@ -39,11 +40,6 @@ const Input = styled(RebassInput)(
 
 const StyledInputContainer = styled(Flex)`
   position: relative;
-  button {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-  }
   label {
     font-size: ${({ theme }) => theme.fontSizes[0]+"px"};
     font-weight: bold;
@@ -53,9 +49,16 @@ const StyledInputContainer = styled(Flex)`
   }
 `;
 
+const IconContainer = styled(Flex)`
+  position: absolute;
+  align-items: center;
+  padding-left: 2px;
+  right: 10px;
+`;
+
 
 const MyInput = ({
-  button = null,
+  icon = null,
   label,
   name,
   type = "text",
@@ -74,11 +77,12 @@ const MyInput = ({
         placeholder={placeholder}
         variant={variant}
         px={3}
-        py={"12px"}
+        py={2}
+        height={INPUT_HEIGHT}
         width={"100%"}
         {...rest}
       />
-      {button && button()}
+      { icon && <IconContainer height={INPUT_HEIGHT}>{icon()}</IconContainer>}
     </StyledInputContainer>
   );
 };
