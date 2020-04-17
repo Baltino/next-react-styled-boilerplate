@@ -1,5 +1,5 @@
 import React from "react";
-import { Box } from "rebass/styled-components";
+import { Box, Flex } from "rebass/styled-components";
 import styled from "styled-components";
 
 import Button from "./../button";
@@ -7,7 +7,13 @@ import Input from "./index";
 
 export default { title: "Input" };
 
-export const Simple = () => <Input placeholder="Nombre y Apellido *" width={"200px"} />;
+export const Simple = () => (
+  <Flex flexDirection={"column"}>
+    <Input placeholder="Nombre y Apellido *" width={"200px"} />
+    <Input mt={2} placeholder="Nombre y Apellido *" variant={"success"} width={"200px"} />
+    <Input mt={2} placeholder="Nombre y Apellido *" variant={"error"} width={"200px"} />
+  </Flex>
+);
 
 export const SimpleWithLabel = () =>
   <Input label="Nombre y Apellido" placeholder="Nombre y Apellido *" width={"200px"} />;
