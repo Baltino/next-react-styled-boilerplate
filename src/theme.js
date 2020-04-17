@@ -10,8 +10,8 @@ export default {
   radii: [0, 5, 10, "50%"],
   colors: {
     blue: "#07c",
-    lightgray: "#f6f6ff",
-    gray: "#a6a7a9",
+    lightgray: "#e8e8e8",
+    gray: "#aaaaaa",
     lightgreen: "#eff6e4",
     primary: "#fd3863",
     primaryButtonRadial: "#616161 radial-gradient(circle, transparent 1%, #616161 1%) center/15000%",
@@ -71,6 +71,10 @@ export default {
         backgroundSize: "100%",
         transition: "background 0s",
       }
+    },
+    simple: {
+      color: "black",
+      bg: "lightgray"
     },
     empty: {
       color: "primary",

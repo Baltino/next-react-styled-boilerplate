@@ -1,11 +1,13 @@
 import React from "react";
-import { any, bool, array, string, number, oneOfType, func } from "prop-types";
+import { any, bool, array, string, number, oneOfType, func, object } from "prop-types";
 import styled from "styled-components";
 import { Button, Flex } from "rebass/styled-components";
 
 const propTypes = {
   arrowLeft: bool,
   arrowRight: bool,
+  buttonStyles: object,
+  variant: string,
   height: oneOfType([array, string, number]),
   children: any,
   onClick: func
@@ -18,7 +20,7 @@ const MyButton = styled(Button)`
   cursor: pointer;
   outline: none;
   background-position: center;
-  transition: background 0.8s;
+  transition: background 0.2s;
 `;
 
 const ArrowRight = styled(Flex)`
@@ -33,13 +35,22 @@ const ArrowRight = styled(Flex)`
 `;
 
 
-const StyledButton = ({ arrowLeft, arrowRight, height = 50, children, onClick = () => {}, ...rest }) => (
-  <Flex onClick={onClick}>
-    { arrowLeft && <ArrowRight height={height} invert={true} {...rest}/>}
-    <MyButton height={height} {...rest}>
+const StyledButton = ({ 
+  arrowLeft, 
+  arrowRight, 
+  variant, 
+  height = 50, 
+  children, 
+  onClick = () => {}, 
+  buttonStyles = {},
+  ...rest 
+}) => (
+  <Flex onClick={onClick} {...rest}>
+    { arrowLeft && <ArrowRight height={height} invert={true} variant={variant}/>}
+    <MyButton height={height} variant={variant} flex={1} {...buttonStyles}>
       {children}
     </MyButton>
-    { arrowRight && <ArrowRight  height={height} {...rest}/>}
+    { arrowRight && <ArrowRight  height={height} variant={variant}/>}
   </Flex>
 );
 

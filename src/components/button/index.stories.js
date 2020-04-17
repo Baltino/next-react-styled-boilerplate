@@ -13,6 +13,6 @@ export const Primary = () => (
   </Flex>
 );
 
-export const Secondary = () => <Button variant="secondary">My Button</Button>;
+export const Secondary = () => <Button variant="secondary" width={150}>My Button</Button>;
 
-export const Empty = () => <Button variant="empty">My Button</Button>;
+export const Empty = () => <Button variant="empty" width={150}>My Button</Button>;
