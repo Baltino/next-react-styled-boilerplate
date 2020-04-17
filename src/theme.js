@@ -6,6 +6,7 @@ export default {
   ],
   borders: {
     none: 0,
+    simple: "1px solid black"
   },
   radii: [0, 5, 10, "50%"],
   colors: {
@@ -45,6 +46,14 @@ export default {
     large: "0 0 24px rgba(0, 0, 0, .125)"
   },
   variants: {
+    "input-error": {
+      border: "simple",
+      borderColor: "error"
+    },
+    "input-success": {
+      border: "simple",
+      borderColor: "success"
+    }
   },
   text: {
   },
@@ -52,33 +61,6 @@ export default {
     
   },
   buttons: {
-    primary: {
-      color: "white",
-      bg: "primary",
-      "&:hover": {
-      },
-      "&:active": {
-        backgroundSize: "100%",
-        transition: "background 0s",
-      }
-    },
-    secondary: {
-      color: "white",
-      bg: "gray",
-      "&:hover": {
-      },
-      "&:active": {
-        backgroundSize: "100%",
-        transition: "background 0s",
-      }
-    },
-    simple: {
-      color: "black",
-      bg: "lightgray"
-    },
-    empty: {
-      color: "primary",
-      bg: "transparent"
-    }
+    
   }
 }
