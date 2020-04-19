@@ -15,7 +15,6 @@ const Root = props => {
     <>
       <Box 
         sx={{
-          p: 4,
           color: "text",
           bg: "white",
           fontFamily: "body",

@@ -5,13 +5,16 @@ import { ThemeProvider } from "styled-components";
 
 import theme from "./../theme";
 
+import Container from "../components/container";
 import Root from "../components/root";
 
 const index = () => {
   return (
     <ThemeProvider theme={theme}>
       <Root>
-        <Heading variant='display'>Welcome</Heading>
+        <Container py={3}>
+          <Heading variant='display'>Welcome</Heading>
+        </Container>
       </Root>
     </ThemeProvider>
   );
