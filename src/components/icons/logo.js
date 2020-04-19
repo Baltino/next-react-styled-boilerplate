@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { animated, useSpring } from "react-spring";
-import { config } from "react-spring/renderprops";
+import { config } from "react-spring/renderprops.cjs";
 import { oneOfType, string, number, array, any, bool } from "prop-types";
 
 const propTypes = {

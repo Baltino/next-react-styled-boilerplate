@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useSpring } from "react-spring";
-import { config } from "react-spring/renderprops";
+import { config } from "react-spring/renderprops.cjs";
 import { Flex } from "rebass/styled-components";
 
 
