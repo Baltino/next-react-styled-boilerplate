@@ -1,6 +1,7 @@
 # Mi Audiencia UI components.
-- Nextjs - Reactjs - Rebass styled-components (WIP)
+- Nextjs - Reactjs - Rebass styled-components
 Boilerplate to start any proyect that needs SEO (that's where Nextjs comes in to SSR)
+
 
 ## Stack
 - Nextjs
@@ -26,3 +27,4 @@ A demo is at: https://miaudiencia-storybook.now.sh
 ### License
 
 MIT
+Credits to Antoni Kepinski for base project: https://github.com/xxczaki/styled-react-boilerplate

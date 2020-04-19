@@ -13,8 +13,8 @@
     "deploy-storybook": "build-storybook -c .storybook -o .out && now --prod"
   },
   "main": "src/index.js",
-  "repository": "https://github.com/xxczaki/styled-react-boilerplate",
-  "author": "Antoni Kepinski",
+  "repository": "https://github.com/Baltino/next-react-styled-boilerplate",
+  "author": "Maximiliano Aragon",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.9.0",

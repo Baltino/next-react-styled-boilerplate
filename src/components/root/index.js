@@ -4,7 +4,7 @@ import { Box } from "rebass/styled-components";
 
 // Import Components
 import Header from "./../header";
-import GlobalStyles from "./../global.styles.js";
+import GlobalStyles from "./global.styles.js";
 
 const propTypes = {
   children: any,

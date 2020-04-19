@@ -7,7 +7,6 @@ import { border, color, space, variant } from "styled-system";
 
 const INPUT_HEIGHT = 50;
 
-console.log('variant', variant)
 const propTypes = {
   icon: func,
   label: string,

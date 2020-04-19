@@ -30,7 +30,7 @@ const Result = styled(Flex)`
 
 const getResults = text => axios
   .get(
-    `https://api.mapbox.com/geocoding/v5/mapbox.places/${text}.json?access_token=${MAPBOX_KEY}&country=es&types=address&language=es`
+    `https://api.mapbox.com/geocoding/v5/mapbox.places/${text}.json?\access_token=${MAPBOX_KEY}&country=es&types=address&language=es`
   )
   .then(({ data }) => data.features)
 
