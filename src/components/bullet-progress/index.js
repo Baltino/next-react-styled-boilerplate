@@ -24,7 +24,7 @@ const Bullet = styled(Flex)`
 const Bullets = ({ steps, current, width = 1, ...rest }) => {
   return (
     <Flex width={width} justifyContent={"space-between"} {...rest}>
-      {Array(steps).fill(0).map((c, index) => <Bullet key={index} active={current === index} /> )}
+      {Array(steps).fill(0).map((c, index) => <Bullet key={index} active={current >= index} /> )}
     </Flex>
   )
 };

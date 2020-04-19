@@ -3,12 +3,11 @@ import styled from "styled-components";
 import { string, any, oneOf, func } from "prop-types";
 
 import { Flex } from "rebass/styled-components";
-import { variant } from "styled-system";
-import { Label, Input as RebassInput } from "@rebass/forms/styled-components";
+import { border, color, space, variant } from "styled-system";
 
-const INPUT_HEIGHT = 40;
+const INPUT_HEIGHT = 50;
 
-
+console.log('variant', variant)
 const propTypes = {
   icon: func,
   label: string,
@@ -19,24 +18,33 @@ const propTypes = {
   width: any,
 };
 
-const Input = styled(RebassInput)(
-  {
-    background: "lightgray",
-    color: "black",
-    transition: "0.5s all ease-in",
-    border: 0,
-  },
+const SimpleInput = styled.input`
+  ${border}
+  ${color}  
+  ${space}
+  color: black;
+  outline: none;
+  border: 0;
+  transition: 0.5s all ease-in;
+`;
+const Input = styled(SimpleInput)({},
   variant({
     variants: {
       error: {
+        border: "simple",
         borderColor: "error"
       },
       success: {
+        border: "simple",
         borderColor: "success"
       }
     }
   })
 )
+
+const Label = styled.label`
+
+`;
 
 const StyledInputContainer = styled(Flex)`
   position: relative;
@@ -72,12 +80,13 @@ const MyInput = ({
       { label && (<Label htmlFor={name}>{label}</Label>) }
       <Input
         id={name}
+        bg={"lightgray"}
         name={name}
         type={type}
         placeholder={placeholder}
         variant={variant}
         px={3}
-        py={2}
+        py={3}
         height={INPUT_HEIGHT}
         width={"100%"}
         {...rest}

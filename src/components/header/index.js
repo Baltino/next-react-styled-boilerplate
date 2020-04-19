@@ -18,12 +18,12 @@ const Header = () => {
     >
       <Logo height={["50px"]} width={["200px"]} path={a} />
       <Flex justifyContent={"flex-end"}>
-        <Link href="/">
+        <Link href="/" underlined={false}>
           <Button variant={"empty"}>
             Contacto
           </Button>
         </Link>
-        <Link href="/about">
+        <Link href="/about" underlined={false}>
           <Button variant={"primary"}>
             Comenzar Ahora
           </Button>
